@@ -8,7 +8,20 @@
     <title>Beer</title>
 </head>
 <body>
+    <div id="button-grid-toggle"></div>
+    <div id="button-list-toggle"></div>
+
+
     <div class="listings"></div>
+
+<template id="beer-template">
+    <article>
+    <img src="https://raw.githubusercontent.com/TIY-LR-FEE-2015-June/assignments/master/2.1-beer-layout/bottle-1.png" alt="beer">
+    <h2> {{ name }} </h2>
+    <h2> {{ abv }} </h2>
+    <p> {{ description }} </p>
+    </article>
+</template>
 
 <script src="jquery/dist/jquery.min.js"></script>
 <script src="handlebars/handlebars.js"></script>
