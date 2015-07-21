@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="app.css">
+    <title>Beer</title>
+</head>
+<body>
+    <div id="button-grid-toggle"></div>
+    <div id="button-list-toggle"></div>
+    <div class="main">
+
+    <div class="listings"></div>
+    </div>
+
+<template id="beer-template">
+    <article>
+    <img src="https://raw.githubusercontent.com/TIY-LR-FEE-2015-June/assignments/master/2.1-beer-layout/bottle-1.png" alt="beer">
+    <h2> {{ name }} </h2>
+    <h2> {{ abv }} </h2>
+    <p> {{ description }} </p>
+    <button>Add to cart</button>
+    </article>
+</template>
+
+<script src="jquery/dist/jquery.min.js"></script>
+<script src="handlebars/handlebars.js"></script>
+<script src="beer-data.js"></script>
+<script src="app.js"></script>
+<!-- livereload snippet -->
+<script>document.write('<script src="http://'
+ + (location.host || 'localhost').split(':')[0]
+ + ':35729/livereload.js?snipver=1"><\/script>')
+</script>
+</body>
+</html>
