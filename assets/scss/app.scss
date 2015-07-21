@@ -18,17 +18,41 @@ html {
 
 
 body {
-
+    max-width: 100%;
+    position: relative;
     padding: 20px;
-    margin: auto;
+
+
+}
+.buttons {
+    position: relative;
+    height: 80px;
+    color: #43A5DA;
+    border-bottom: 2px solid #43A5DA;
+
+    #button-list {
+        font-size: 1.2em;
+        float: right;
+    }
+    #button-grid {
+        font-size: 1.2em;
+        float: right;
+    }
+    .fa {
+        padding: 10px;
+    }
 }
 
 .main-body {
     @include outer-container(960px);
+
 }
 .listings {
     @include span-columns(12);
     @include omega();
+    border-left: 2px solid #43A5DA;
+    border-right: 2px solid #43A5DA;
+
 }
 article {
     @include span-columns(4);
@@ -36,16 +60,27 @@ article {
     text-align: center;
     font-size: 1.5em;
     padding: 20px;
+    h2.name {
+        color: #43A5DA;
+    }
+    h2.price {
+        color: #CECECE;
+    }
 
     p {
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
+        font-size: 0.7em;
+        padding: 10px 0;
+        color: #43A5DA;
     }
     button {
         @include button;
     }
 }
+.grid {
     .name {
-        font-color: #359CD8;
+        color: red;
     }
+}
