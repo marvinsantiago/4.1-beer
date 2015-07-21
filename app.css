@@ -1854,7 +1854,6 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: gray;
   padding: 20px;
   margin: auto; }
 
@@ -1881,7 +1880,9 @@ article {
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%;
-  text-align: center; }
+  text-align: center;
+  font-size: 1.5em;
+  padding: 20px; }
   article:last-child {
     margin-right: 0; }
   article:nth-child(3n) {
@@ -1920,3 +1921,6 @@ article {
     article button:disabled {
       cursor: not-allowed;
       opacity: 0.5; }
+
+.name {
+  font-color: #359CD8; }
