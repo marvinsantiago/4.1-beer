@@ -14,5 +14,18 @@
     inventory += template(data);
   });
 
-  contentEl.innerHTML = inventory;
+  contentEl.innerHTML = inventory ;
+
+  var list = document.querySelector('#button-list');
+
+  list.onclick = function() {
+    contentEl.classList.add('grid');
+  };
+
+  var grid = document.querySelector('#button-grid');
+
+  grid.onclick = function() {
+  contentEl.classList.add('list');
+};
+
 })();

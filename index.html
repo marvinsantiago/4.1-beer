@@ -8,10 +8,15 @@
     <title>Beer</title>
 </head>
 <body>
-    <div id="button-grid-toggle"></div>
-    <div id="button-list-toggle"></div>
     <div class="main">
-
+    <div class="buttons">
+        <div id="button-list">
+            <i class="fa fa-list-ul"></i>
+        </div>
+        <div id="button-grid">
+            <i class="fa fa-th"></i>
+        </div>
+    </div>
     <div class="listings"></div>
     </div>
 
@@ -19,9 +24,9 @@
     <article>
     <img src="https://raw.githubusercontent.com/TIY-LR-FEE-2015-June/assignments/master/2.1-beer-layout/bottle-1.png" alt="beer">
     <h2 class="name"> {{ name }} </h2>
-    <h2> {{ abv }} </h2>
+    <h2 class="price"> ${{ abv }} </h2>
     <p> {{ description }} </p>
-    <button>Add to cart</button>
+    <button><i class="fa fa-plus-circle"></i>Add to cart</button>
     </article>
 </template>
 
