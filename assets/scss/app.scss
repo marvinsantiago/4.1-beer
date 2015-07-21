@@ -18,7 +18,7 @@ html {
 
 
 body {
-    background: gray;
+
     padding: 20px;
     margin: auto;
 }
@@ -34,6 +34,8 @@ article {
     @include span-columns(4);
     @include omega(3n);
     text-align: center;
+    font-size: 1.5em;
+    padding: 20px;
 
     p {
         text-overflow: ellipsis;
@@ -44,3 +46,6 @@ article {
         @include button;
     }
 }
+    .name {
+        font-color: #359CD8;
+    }
