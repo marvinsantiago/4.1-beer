@@ -1854,8 +1854,23 @@ html {
   box-sizing: inherit; }
 
 body {
-  padding: 20px;
-  margin: auto; }
+  max-width: 100%;
+  position: relative;
+  padding: 20px; }
+
+.buttons {
+  position: relative;
+  height: 80px;
+  color: #43A5DA;
+  border-bottom: 2px solid #43A5DA; }
+  .buttons #button-list {
+    font-size: 1.2em;
+    float: right; }
+  .buttons #button-grid {
+    font-size: 1.2em;
+    float: right; }
+  .buttons .fa {
+    padding: 10px; }
 
 .main-body {
   max-width: 960px;
@@ -1871,7 +1886,9 @@ body {
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  margin-right: 0; }
+  margin-right: 0;
+  border-left: 2px solid #43A5DA;
+  border-right: 2px solid #43A5DA; }
   .listings:last-child {
     margin-right: 0; }
 
@@ -1889,10 +1906,17 @@ article {
     margin-right: 0; }
   article:nth-child(3n+1) {
     clear: left; }
+  article h2.name {
+    color: #43A5DA; }
+  article h2.price {
+    color: #CECECE; }
   article p {
     text-overflow: ellipsis;
     white-space: nowrap;
-    overflow: hidden; }
+    overflow: hidden;
+    font-size: 0.7em;
+    padding: 10px 0;
+    color: #43A5DA; }
   article button {
     border: 1px solid #076fe4;
     border-radius: 3px;
@@ -1922,5 +1946,5 @@ article {
       cursor: not-allowed;
       opacity: 0.5; }
 
-.name {
-  font-color: #359CD8; }
+.grid .name {
+  color: red; }
