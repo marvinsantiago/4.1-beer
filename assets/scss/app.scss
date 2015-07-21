@@ -14,3 +14,33 @@ html {
 }
 
 // Your SASS Journey Starts Here
+
+
+
+body {
+    background: gray;
+    padding: 20px;
+    margin: auto;
+}
+
+.main-body {
+    @include outer-container(960px);
+}
+.listings {
+    @include span-columns(12);
+    @include omega();
+}
+article {
+    @include span-columns(4);
+    @include omega(3n);
+    text-align: center;
+
+    p {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    button {
+        @include button;
+    }
+}
