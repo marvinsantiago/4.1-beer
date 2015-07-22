@@ -14,3 +14,113 @@ html {
 }
 
 // Your SASS Journey Starts Here
+
+
+
+body {
+    max-width: 100%;
+    position: relative;
+    padding: 20px;
+
+
+}
+.buttons {
+    position: relative;
+    height: 50px;
+    color: #43A5DA;
+    border-bottom: 2px solid #43A5DA;
+
+    #button-list {
+        font-size: 1.2em;
+        float: right;
+    }
+    #button-list:hover {
+        text-decoration: strong;
+        font-size: 1.4em;
+    }
+    #button-grid {
+        font-size: 1.2em;
+        float: right;
+    }
+    #button-grid:hover {
+        text-decoration: strong;
+        font-size: 1.4em;
+    }
+    .fa {
+        padding: 10px;
+    }
+}
+
+.main-body {
+    @include outer-container(960px);
+    border-left: 2px solid #43A5DA;
+    border-right: 2px solid #43A5DA;
+
+}
+.grid {
+    @include span-columns(12);
+    @include omega(3n);
+    article {
+        @include span-columns(4);
+        @include omega(3n);
+        padding: 20px;
+    }
+    text-align: center;
+    font-size: 1.5em;
+    padding: 20px;
+    h2.name {
+        color: #43A5DA;
+    }
+    h2.price {
+        color: #CECECE;
+    }
+    p {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 0.7em;
+        padding: 10px 0;
+        color: #43A5DA;
+    }
+    button {
+        @include button;
+    }
+}
+
+.list {
+    article {
+    @include span-columns(12);
+    @include omega(3n);
+    padding: 20px;
+
+    }
+    img {
+        @include span-columns(2);
+    }
+    h2.name {
+        font-size: 1.2em;
+        color: #43A5DA;
+        @include span-columns(2);
+
+    }
+    h2.price {
+        color: #CECECE;
+        font-size: 1.2em;
+        @include span-columns(2);
+        @include shift(1);
+    }
+    p {
+        @include span-columns(2);
+        // text-overflow: ellipsis;
+        // white-space: nowrap;
+        // overflow: hidden;
+        font-size: 0.9 em;
+        padding: 10px 0;
+        color: #43A5DA;
+    }
+    button {
+        @include button;
+    }
+}
+
+
