@@ -92,26 +92,29 @@ body {
     @include span-columns(12);
     @include omega(3n);
     padding: 20px;
+
     }
     img {
         @include span-columns(2);
     }
     h2.name {
+        font-size: 1.2em;
         color: #43A5DA;
         @include span-columns(2);
 
     }
     h2.price {
         color: #CECECE;
+        font-size: 1.2em;
         @include span-columns(2);
         @include shift(1);
     }
     p {
         @include span-columns(2);
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-        font-size: 0.7em;
+        // text-overflow: ellipsis;
+        // white-space: nowrap;
+        // overflow: hidden;
+        font-size: 0.9 em;
         padding: 10px 0;
         color: #43A5DA;
     }
