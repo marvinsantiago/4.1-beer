@@ -1977,6 +1977,7 @@ body {
     margin-right: 0; }
 
 .list h2.name {
+  font-size: 1.2em;
   color: #43A5DA;
   float: left;
   display: block;
@@ -1987,6 +1988,7 @@ body {
 
 .list h2.price {
   color: #CECECE;
+  font-size: 1.2em;
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -2000,10 +2002,7 @@ body {
   display: block;
   margin-right: 2.35765%;
   width: 14.70196%;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  font-size: 0.7em;
+  font-size: 0.9 em;
   padding: 10px 0;
   color: #43A5DA; }
   .list p:last-child {
